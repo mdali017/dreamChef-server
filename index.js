@@ -26,3 +26,5 @@ app.get('/allChef/:id', (req, res) =>{
 app.listen(port, () =>{
     console.log(`server is start with ${port}`)
 })
+
+module.exports = app
