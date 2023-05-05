@@ -3,7 +3,7 @@ const app = express();
 const cors = require('cors')
 const port = process.env.PORT || 6000;
 
-const allChef = require('./data/fakeChefData.json');
+const allChef = require('./fakeChefData.json');
 
 app.use(cors())
 
