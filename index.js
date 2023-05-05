@@ -15,13 +15,13 @@ app.get('/allChef', (req, res) =>{
     res.send(allChef);
 })
 
-// app.get('/allChef/:id', (req, res) =>{
-//     const id = req.params.id;
+app.get('/allChef/:id', (req, res) =>{
+    const id = req.params.id;
     
-//     const item = allChef?.find(chefDetails => chefDetails.id == id);
+    const item = allChef?.find(chefDetails => chefDetails.id == id);
    
-//     res.send(item)
-// })
+    res.send(item)
+})
 
 app.listen(port, () =>{
     console.log(`server is start with ${port}`)
